@@ -47,7 +47,7 @@
             // 
             // btnLoadFile
             // 
-            this.btnLoadFile.Location = new System.Drawing.Point(109, 501);
+            this.btnLoadFile.Location = new System.Drawing.Point(224, 512);
             this.btnLoadFile.Name = "btnLoadFile";
             this.btnLoadFile.Size = new System.Drawing.Size(109, 43);
             this.btnLoadFile.TabIndex = 0;
@@ -178,9 +178,8 @@
             this.lblTimesOpenedNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblTimesOpenedNum.Location = new System.Drawing.Point(445, 36);
             this.lblTimesOpenedNum.Name = "lblTimesOpenedNum";
-            this.lblTimesOpenedNum.Size = new System.Drawing.Size(79, 29);
+            this.lblTimesOpenedNum.Size = new System.Drawing.Size(0, 29);
             this.lblTimesOpenedNum.TabIndex = 14;
-            this.lblTimesOpenedNum.Text = "label6";
             // 
             // MainForm
             // 
