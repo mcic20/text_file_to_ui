@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Reader.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="UserDisplayer.cs" />
     <Compile Include="UserFileReader.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

@@ -196,12 +196,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblRoleDep;
-        private System.Windows.Forms.TextBox txtFullName;
-        private System.Windows.Forms.TextBox txtYearOfBirth;
-        private System.Windows.Forms.TextBox txtCity;
-        private System.Windows.Forms.TextBox txtFaculty;
-        private System.Windows.Forms.TextBox txtRole;
-        private System.Windows.Forms.TextBox txtRoleDep;
+        public System.Windows.Forms.TextBox txtFullName;
+        public System.Windows.Forms.TextBox txtYearOfBirth;
+        public System.Windows.Forms.TextBox txtCity;
+        public System.Windows.Forms.TextBox txtFaculty;
+        public System.Windows.Forms.TextBox txtRole;
+        public System.Windows.Forms.TextBox txtRoleDep;
     }
 }
 
