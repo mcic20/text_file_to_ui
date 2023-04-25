@@ -4,8 +4,12 @@
     {
         public string NameFull(User a)
         {
-            string fullName = a.firstName + " " + a.lastName;
-            return fullName;
+            if (a != null)
+            {
+                string fullName = a.firstName + " " + a.lastName;
+                return fullName;
+            }
+            else return null;
         }
     }
 }
