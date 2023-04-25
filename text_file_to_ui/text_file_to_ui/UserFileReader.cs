@@ -11,20 +11,23 @@ namespace text_file_to_ui
 
     public class UserFileReader
     {
-        string Text;
-         public string FileOpen() {
+         public Reader FileOpen() {
             OpenFileDialog ofd = new OpenFileDialog();
                 ofd.Filter = "Text Documents|*.txt";
                 ofd.Multiselect = false ;
-                 if (ofd.ShowDialog() == DialogResult.OK)
+            Reader a = new Reader();
+            if (ofd.ShowDialog() == DialogResult.OK)
                    {
                       using (StreamReader sr = new StreamReader(ofd.FileName))
                        {
-                        Text = sr.ReadToEnd();
-                        return Text;
+                           var lines = sr.ReadToEnd().Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                           foreach (var line in lines)
+                           {
+                            
+                           }
                         }
                     }
-                return Text;
+            return a;
             }
     }
 }

@@ -14,8 +14,7 @@ namespace text_file_to_ui
 
         private void btnLoadFile_Click_1(object sender, EventArgs e)
         {
-           UserFileReader userFileReader = new UserFileReader();
-           userFileReader.FileOpen();
+           
         }
     }
 }
