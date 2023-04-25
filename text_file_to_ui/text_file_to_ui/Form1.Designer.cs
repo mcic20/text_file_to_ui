@@ -45,7 +45,7 @@
             // 
             // btnLoadFile
             // 
-            this.btnLoadFile.Location = new System.Drawing.Point(285, 495);
+            this.btnLoadFile.Location = new System.Drawing.Point(109, 501);
             this.btnLoadFile.Name = "btnLoadFile";
             this.btnLoadFile.Size = new System.Drawing.Size(109, 43);
             this.btnLoadFile.TabIndex = 0;
@@ -118,7 +118,7 @@
             this.txtFullName.Location = new System.Drawing.Point(71, 98);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.ReadOnly = true;
-            this.txtFullName.Size = new System.Drawing.Size(198, 22);
+            this.txtFullName.Size = new System.Drawing.Size(278, 22);
             this.txtFullName.TabIndex = 7;
             // 
             // txtYearOfBirth
@@ -126,7 +126,7 @@
             this.txtYearOfBirth.Location = new System.Drawing.Point(71, 176);
             this.txtYearOfBirth.Name = "txtYearOfBirth";
             this.txtYearOfBirth.ReadOnly = true;
-            this.txtYearOfBirth.Size = new System.Drawing.Size(198, 22);
+            this.txtYearOfBirth.Size = new System.Drawing.Size(278, 22);
             this.txtYearOfBirth.TabIndex = 8;
             // 
             // txtCity
@@ -134,7 +134,7 @@
             this.txtCity.Location = new System.Drawing.Point(71, 245);
             this.txtCity.Name = "txtCity";
             this.txtCity.ReadOnly = true;
-            this.txtCity.Size = new System.Drawing.Size(198, 22);
+            this.txtCity.Size = new System.Drawing.Size(278, 22);
             this.txtCity.TabIndex = 9;
             // 
             // txtFaculty
@@ -142,7 +142,7 @@
             this.txtFaculty.Location = new System.Drawing.Point(71, 305);
             this.txtFaculty.Name = "txtFaculty";
             this.txtFaculty.ReadOnly = true;
-            this.txtFaculty.Size = new System.Drawing.Size(198, 22);
+            this.txtFaculty.Size = new System.Drawing.Size(278, 22);
             this.txtFaculty.TabIndex = 10;
             // 
             // txtRole
@@ -150,7 +150,7 @@
             this.txtRole.Location = new System.Drawing.Point(71, 371);
             this.txtRole.Name = "txtRole";
             this.txtRole.ReadOnly = true;
-            this.txtRole.Size = new System.Drawing.Size(198, 22);
+            this.txtRole.Size = new System.Drawing.Size(278, 22);
             this.txtRole.TabIndex = 11;
             // 
             // txtRoleDep
@@ -158,14 +158,14 @@
             this.txtRoleDep.Location = new System.Drawing.Point(71, 443);
             this.txtRoleDep.Name = "txtRoleDep";
             this.txtRoleDep.ReadOnly = true;
-            this.txtRoleDep.Size = new System.Drawing.Size(198, 22);
+            this.txtRoleDep.Size = new System.Drawing.Size(278, 22);
             this.txtRoleDep.TabIndex = 12;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 567);
+            this.ClientSize = new System.Drawing.Size(436, 567);
             this.Controls.Add(this.txtRoleDep);
             this.Controls.Add(this.txtRole);
             this.Controls.Add(this.txtFaculty);

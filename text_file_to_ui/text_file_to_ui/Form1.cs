@@ -19,7 +19,7 @@ namespace text_file_to_ui
 
         private void btnLoadFile_Click(object sender, EventArgs e)
         {
-
+            UserFileReader.FileOpen();
         }
     }
 }
