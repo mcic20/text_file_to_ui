@@ -59,6 +59,12 @@ namespace text_file_to_ui
                     if (line.Contains("Datoteci"))
                     {
                         a.pristup = line;
+                        sr.Close();
+                        string str = File.ReadAllText(ofd.FileName);
+                        int broj = int.Parse(a.pristup.Substring(27));
+                        string str2 = "Datoteci pristupljeno puta="+(broj+1);
+                        str = str.Replace(a.pristup, str2);
+                        File.WriteAllText(ofd.FileName, str);
                     }
                 }
                 return a;

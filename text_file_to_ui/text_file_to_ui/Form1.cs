@@ -19,6 +19,7 @@ namespace text_file_to_ui
             _ = new User();
             Reader reader = new Reader();
             User a = userParser.UserParse(reader);
+         
             if (a != null)
             {
                 txtFullName.Text = userDisplayer.NameFull(a);
@@ -26,6 +27,7 @@ namespace text_file_to_ui
                 txtCity.Text = a.city.ToString();
                 txtFaculty.Text = a.faculty.ToString();
                 txtRole.Text = a.role.ToString();
+                lblTimesOpenedNum.Text = a.timesRead.ToString();
                 if (a.role == "student")
                 {
                     txtRoleDep.Text = a.favoriteCourse.ToString();
@@ -38,5 +40,7 @@ namespace text_file_to_ui
                 }
             }
         }
+
+       
     }
 }

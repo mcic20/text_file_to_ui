@@ -41,6 +41,8 @@
             this.txtFaculty = new System.Windows.Forms.TextBox();
             this.txtRole = new System.Windows.Forms.TextBox();
             this.txtRoleDep = new System.Windows.Forms.TextBox();
+            this.lblTimesOpened = new System.Windows.Forms.Label();
+            this.lblTimesOpenedNum = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLoadFile
@@ -109,9 +111,8 @@
             this.lblRoleDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblRoleDep.Location = new System.Drawing.Point(67, 420);
             this.lblRoleDep.Name = "lblRoleDep";
-            this.lblRoleDep.Size = new System.Drawing.Size(44, 20);
+            this.lblRoleDep.Size = new System.Drawing.Size(0, 20);
             this.lblRoleDep.TabIndex = 6;
-            this.lblRoleDep.Text = "label";
             // 
             // txtFullName
             // 
@@ -161,11 +162,33 @@
             this.txtRoleDep.Size = new System.Drawing.Size(383, 22);
             this.txtRoleDep.TabIndex = 12;
             // 
+            // lblTimesOpened
+            // 
+            this.lblTimesOpened.AutoSize = true;
+            this.lblTimesOpened.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTimesOpened.Location = new System.Drawing.Point(433, 9);
+            this.lblTimesOpened.Name = "lblTimesOpened";
+            this.lblTimesOpened.Size = new System.Drawing.Size(106, 18);
+            this.lblTimesOpened.TabIndex = 13;
+            this.lblTimesOpened.Text = "Times opened:";
+            // 
+            // lblTimesOpenedNum
+            // 
+            this.lblTimesOpenedNum.AutoSize = true;
+            this.lblTimesOpenedNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTimesOpenedNum.Location = new System.Drawing.Point(445, 36);
+            this.lblTimesOpenedNum.Name = "lblTimesOpenedNum";
+            this.lblTimesOpenedNum.Size = new System.Drawing.Size(79, 29);
+            this.lblTimesOpenedNum.TabIndex = 14;
+            this.lblTimesOpenedNum.Text = "label6";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 567);
+            this.Controls.Add(this.lblTimesOpenedNum);
+            this.Controls.Add(this.lblTimesOpened);
             this.Controls.Add(this.txtRoleDep);
             this.Controls.Add(this.txtRole);
             this.Controls.Add(this.txtFaculty);
@@ -202,6 +225,8 @@
         public System.Windows.Forms.TextBox txtFaculty;
         public System.Windows.Forms.TextBox txtRole;
         public System.Windows.Forms.TextBox txtRoleDep;
+        private System.Windows.Forms.Label lblTimesOpened;
+        private System.Windows.Forms.Label lblTimesOpenedNum;
     }
 }
 

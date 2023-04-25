@@ -1,4 +1,6 @@
-﻿namespace text_file_to_ui
+﻿using System.IO;
+
+namespace text_file_to_ui
 {
     public class UserDisplayer
     {
@@ -11,6 +13,12 @@
             }
             else return null;
         }
+
+        
+
     }
+
 }
+
+
 

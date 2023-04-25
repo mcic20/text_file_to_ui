@@ -8,6 +8,7 @@ namespace text_file_to_ui
 {
     public class Reader
     {
+        public string pathFile { get; set; }
         public string firstNameString { get; set; }
         public string lastNameString { get; set; }
         public string yearOfBirthString { get; set; }
