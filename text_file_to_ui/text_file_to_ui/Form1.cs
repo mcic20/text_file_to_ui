@@ -24,7 +24,7 @@ namespace text_file_to_ui
             txtCity.Text = a.city.ToString();
             txtFaculty.Text = a.faculty.ToString();
             txtRole.Text = a.role.ToString();
-            if (a.role == "Student")
+            if (a.role == "student")
             {
                 txtRoleDep.Text = a.favoriteCourse.ToString();
                 lblRoleDep.Text = "Favorite course:";
