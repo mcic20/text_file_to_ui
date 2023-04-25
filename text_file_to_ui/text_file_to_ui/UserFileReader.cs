@@ -7,16 +7,24 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace text_file_to_ui
-{
+{   
+
     public class UserFileReader
     {
-        public void FileOpen() {
-            OpenFileDialog ofd = new OpenFileDialog
-            {
-                Filter = "Text Files|*.txt",
-                Multiselect = false
-            };
-            ofd.ShowDialog();
-        }
+        string Text;
+         public string FileOpen() {
+            OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "Text Documents|*.txt";
+                ofd.Multiselect = false ;
+                 if (ofd.ShowDialog() == DialogResult.OK)
+                   {
+                      using (StreamReader sr = new StreamReader(ofd.FileName))
+                       {
+                        Text = sr.ReadToEnd();
+                        return Text;
+                        }
+                    }
+                return Text;
+            }
     }
 }
