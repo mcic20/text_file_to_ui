@@ -18,9 +18,35 @@ namespace text_file_to_ui
             UserDisplayer userDisplayer = new UserDisplayer();
             _ = new User();
             Reader reader = new Reader();
-            User a = userParser.UserParse(reader);
-
-            if (a != null)
+            try
+            {
+                User a = userParser.UserParse(reader);
+                if (a != null)
+                {
+                    txtFullName.Text = userDisplayer.NameFull(a);
+                    txtYearOfBirth.Text = a.YearOfBirth.ToString();
+                    txtCity.Text = a.City.ToString();
+                    txtFaculty.Text = a.Faculty.ToString();
+                    txtRole.Text = a.Role.ToString();
+                    lblTimesOpenedNum.Text = a.TimesRead.ToString();
+                    if (a.Role == "student")
+                    {
+                        txtRoleDep.Text = a.FavoriteCourse.ToString();
+                        lblRoleDep.Text = "Favorite course:";
+                    }
+                    else
+                    {
+                        txtRoleDep.Text = a.Department.ToString();
+                        lblRoleDep.Text = "Katedra:";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unsupported file format.", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            /*if (a != null)
             {
                 txtFullName.Text = userDisplayer.NameFull(a);
                 txtYearOfBirth.Text = a.YearOfBirth.ToString();
@@ -38,7 +64,7 @@ namespace text_file_to_ui
                     txtRoleDep.Text = a.Department.ToString();
                     lblRoleDep.Text = "Katedra:";
                 }
-            }
+            }*/
 
         }
 

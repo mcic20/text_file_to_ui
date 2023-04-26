@@ -11,10 +11,10 @@ namespace text_file_to_ui
             a = userFileReader.FileOpen();
             if (a != null)
             {
-#if DEBUG
-                try
-#endif
-                {
+
+                //try
+
+               // {
                     b.FirstName = a.FirstNameString.Substring(4);
                     b.LastName = a.LastNameString.Substring(8);
                     b.YearOfBirth = a.YearOfBirthString.Substring(15);
@@ -32,15 +32,15 @@ namespace text_file_to_ui
                     }
                     b.TimesRead = a.TimesRead.Substring(27);
                     return b;
-                }
-#if DEBUG
-                catch
-#endif
-                {
-                    MessageBox.Show("Unsupported file format.", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return null;
-                }
+               // }
+
+               // catch
+
+                //{
+                //    MessageBox.Show("Unsupported file format.", "Error",
+                //    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                 //   return null;
+              //  }
 
             }
             else
