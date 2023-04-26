@@ -26,44 +26,44 @@ namespace text_file_to_ui
                 {
                     if (line.Contains("Ime"))
                     {
-                        a.firstNameString = line;
+                        a.FirstNameString = line;
                     }
                     if (line.Contains("Prezime"))
                     {
-                        a.lastNameString = line;
+                        a.LastNameString = line;
                     }
                     if (line.Contains("Godina"))
                     {
-                        a.yearOfBirthString = line;
+                        a.YearOfBirthString = line;
                     }
                     if (line.Contains("Grad"))
                     {
-                        a.cityString = line;
+                        a.CityString = line;
                     }
                     if (line.Contains("Fakultet"))
                     {
-                        a.facultyString = line;
+                        a.FacultyString = line;
                     }
                     if (line.Contains("Uloga"))
                     {
-                        a.roleString = line;
+                        a.RoleString = line;
                     }
                     if (line.Contains("kolegij"))
                     {
-                        a.favoriteCourseString = line;
+                        a.FavoriteCourseString = line;
                     }
                     if (line.Contains("Katedra"))
                     {
-                        a.departmentString = line;
+                        a.DepartmentString = line;
                     }
                     if (line.Contains("Datoteci"))
                     {
-                        a.pristup = line;
+                        a.TimesRead = line;
                         sr.Close();
                         string str = File.ReadAllText(ofd.FileName);
-                        int broj = int.Parse(a.pristup.Substring(27));
+                        int broj = int.Parse(a.TimesRead.Substring(27));
                         string str2 = "Datoteci pristupljeno puta="+(broj+1);
-                        str = str.Replace(a.pristup, str2);
+                        str = str.Replace(a.TimesRead, str2);
                         File.WriteAllText(ofd.FileName, str);
                     }
                 }

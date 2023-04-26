@@ -8,15 +8,15 @@ namespace text_file_to_ui
 {
     public class Reader
     {
-        public string pathFile { get; set; }
-        public string firstNameString { get; set; }
-        public string lastNameString { get; set; }
-        public string yearOfBirthString { get; set; }
-        public string cityString { get; set; }
-        public string facultyString { get; set; }
-        public string roleString { get; set; }
-        public string departmentString { get; set;}
-        public string favoriteCourseString { get; set;}
-        public string pristup { get; set; }
+        public string PathFile { get; set; }
+        public string FirstNameString { get; set; }
+        public string LastNameString { get; set; }
+        public string YearOfBirthString { get; set; }
+        public string CityString { get; set; }
+        public string FacultyString { get; set; }
+        public string RoleString { get; set; }
+        public string DepartmentString { get; set;}
+        public string FavoriteCourseString { get; set;}
+        public string TimesRead { get; set; }
     }
 }

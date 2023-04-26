@@ -8,14 +8,14 @@ namespace text_file_to_ui
 {
     public class User
     {
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public string yearOfBirth { get; set; }
-        public string city { get; set; }
-        public string faculty { get; set; }
-        public string role { get; set; }    
-        public string department { get; set; }
-        public string favoriteCourse { get; set; }
-        public string timesRead { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string YearOfBirth { get; set; }
+        public string City { get; set; }
+        public string Faculty { get; set; }
+        public string Role { get; set; }    
+        public string Department { get; set; }
+        public string FavoriteCourse { get; set; }
+        public string TimesRead { get; set; }
     }
 }

@@ -6,7 +6,7 @@
         {
             if (a != null)
             {
-                string fullName = a.firstName + " " + a.lastName;
+                string fullName = a.FirstName + " " + a.LastName;
                 return fullName;
             }
             else return null;
