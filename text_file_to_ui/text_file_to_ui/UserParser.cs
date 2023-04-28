@@ -1,7 +1,4 @@
-﻿using System.IO;
-using System.Linq;
-
-namespace text_file_to_ui
+﻿namespace text_file_to_ui
 {
     public class UserParser
     {
@@ -12,25 +9,26 @@ namespace text_file_to_ui
             a = userFileReader.FileOpen();
             if (a != null)
             {
-                b.firstName = a.firstNameString.Substring(4);
-                b.lastName = a.lastNameString.Substring(8);
-                b.yearOfBirth = a.yearOfBirthString.Substring(15);
-                b.city = a.cityString.Substring(13);
-                b.faculty = a.facultyString.Substring(9);
-                b.role = a.roleString.Substring(6);
-                if (b.role == "student")
+                b.FirstName = a.FirstNameString.Substring(4);
+                b.LastName = a.LastNameString.Substring(8);
+                b.YearOfBirth = a.YearOfBirthString.Substring(15);
+                b.City = a.CityString.Substring(13);
+                b.Faculty = a.FacultyString.Substring(9);
+                b.Role = a.RoleString.Substring(6);
+                if (b.Role == "student")
                 {
-                    b.favoriteCourse = a.favoriteCourseString.Substring(17);
-                    b.department = " ";
+                    b.FavoriteCourse = a.FavoriteCourseString.Substring(17);
+                    b.Department = " ";
                 }
                 else
                 {
-                    b.department = a.departmentString.Substring(8);
+                    b.Department = a.DepartmentString.Substring(8);
                 }
-                b.timesRead = a.pristup.Substring(27);
+                b.TimesRead = a.TimesRead.Substring(27);
                 return b;
             }
-            return null;
+            else
+                return null;
         }
     }
 }
